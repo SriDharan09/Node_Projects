@@ -1,0 +1,20 @@
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/navBar.ejs") %>
+
+<div class="container mt-5">
+
+
+    <p class="text-muted">
+        Publised at : <%= blog.posted %>
+    </p>
+    <h2><%= blog.title %></h2>
+
+    <p class="mt-5"> <%= blog.content%> </p>
+
+
+    <a href="./delete/<%= blog._id %>" class="btn btn-danger">Delete</a>
+
+</div>
+
+
+<%- include("./partials/footer.ejs")  %>
